@@ -234,11 +234,11 @@
 }
 
 .portfolio-item-1 {
-  background-image: url("/../img/backgrounds/Q-P-Landing.png");
+  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/qatalyst-thumbnail.webp");
 }
 
 .portfolio-item-2 {
-  background-image: url("/../img/backgrounds/D-P-Landing.png");
+  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/decode-thumbnail.webp");
 }
 
 .portfolio-item-3 {
