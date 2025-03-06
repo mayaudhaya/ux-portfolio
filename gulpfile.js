@@ -53,7 +53,7 @@ function cssmin() {
     grid: true
   }))
   .pipe(cleanCSS())
-  .pipe(dest('dist/source-files/udhayan-css-min-files/'))
+  .pipe(dest('docs/source-files/udhayan-css-min-files/'))
 }
 
 // expanded CSS compilation to source-files folder
@@ -71,7 +71,7 @@ function cssexp() {
     ],
     grid: true
   }))
-  .pipe(dest('dist/source-files/udhayan-css-files/'))
+  .pipe(dest('docs/source-files/udhayan-css-files/'))
 }
 
 // HTML build
@@ -155,12 +155,12 @@ function libsexp() {
     // 'assets/app.js'
   ])
   .pipe(concat('libs.js'))
-  .pipe(dest('dist/source-files/udhayan-js-files/'))
+  .pipe(dest('docs/source-files/udhayan-js-files/'))
 }
 
 // clean dist folder
 function cleandist() {
-  return del(['dist/**'])
+  return del(['docs/**'])
 }
 
 // files copy to dist
@@ -187,7 +187,7 @@ function buildalljs() {
     'app/js/gallery-init.js',
     'app/js/maps/*.js'
   ])
-  .pipe(dest('dist/source-files/udhayan-js-files/'))
+  .pipe(dest('docs/source-files/udhayan-js-files/'))
 }
 
 // files watch
