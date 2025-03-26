@@ -234,19 +234,19 @@
 }
 
 .portfolio-item-1 {
-  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/qatalyst-thumbnail.webp");
+  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Qatalyst.svg");
 }
 
 .portfolio-item-2 {
-  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/decode-thumbnail.webp");
+  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Decode.svg");
 }
 
 .portfolio-item-3 {
-  background-image: url("https://dummyimage.com/1920x1080/686868/737373");
+  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Design+System.svg");
 }
 
 .portfolio-item-4 {
-  background-image: url("https://dummyimage.com/1920x1080/414141/636363");
+  background-image: url("https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Planogram.svg");
 }
 
 .portfolio-item-5 {
