@@ -4470,6 +4470,10 @@ form textarea:required:valid {
        border-radius: var(--_radius);
 }
 
+.p-b-2 {
+  padding-bottom: 2rem;
+}
+
 .project__block {
   padding: 0 2rem;
 }
@@ -4975,6 +4979,10 @@ form textarea:required:valid {
 /* ------------------------------------------------*/
 /* Features Marquee Start */
 /* ------------------------------------------------*/
+.affect-items {
+  width: 1440px !important;
+}
+
 .items {
   max-width: 100%;
   overflow: hidden;
