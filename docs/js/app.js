@@ -152,16 +152,17 @@ let cardHeight;
 if(document.querySelector(".stack-item")) {
 
   function initCards(){
-    animation.clear();
+  animation.clear();
+  requestAnimationFrame(() => {
     cardHeight = cards[0].offsetHeight;
-    //console.log("initCards()", cardHeight);
     cards.forEach((card, index) => {
       if(index > 0){
         gsap.set(card, {y:index * cardHeight});
         animation.to(card, {y:0, duration:index*0.5, ease:"none"},0);
       }
     });
-  };
+  });
+}
   initCards();
 
   ScrollTrigger.create({
@@ -175,7 +176,7 @@ if(document.querySelector(".stack-item")) {
     invalidateOnRefresh: true
   });
 
-  ScrollTrigger.addEventListener("refreshInit", initCards);
+  ScrollTrigger.addEventListener("refreshInit", debounce(initCards, 150));
 };
 // --------------------------------------------- //
 // Stacking Cards End
@@ -323,7 +324,7 @@ const initMarquee = () => {
     };
     items.forEach((itemBlock) => {
       marqueeObject.el = itemBlock.querySelector(".items__container");
-      marqueeObject.width = marqueeObject.el.offsetWidth;
+      requestAnimationFrame(() => { marqueeObject.width = marqueeObject.el.offsetWidth; });
 			marqueeObject.el.innerHTML += marqueeObject.el.innerHTML;
       //let dirFromLeft = "-=50%";
 			let dirFromRight = "+=50%";
@@ -635,11 +636,13 @@ window.addEventListener('DOMContentLoaded', () => {
 // --------------------------------------------- //
 // Color Switch End
 // --------------------------------------------- //
-/*  var animations = bodymovin.loadAnimation({
-  container: document.getElementById('animation-container'),
-  path: 'img/smiley.json',
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  name: "Demo Animation",
-   }); */
+// debounce function
+function debounce(fn, delay = 100) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+}
