@@ -25,7 +25,7 @@
     <!-- Template Favicon & Icons Start -->
     <link rel="icon" href="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/favicon.ico" sizes="any">
     <link rel="icon" href="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/apple-touch-icon.webp">
     <!-- <link rel="manifest" href="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/manifest.webmanifest"> -->
     <!-- Template Favicon & Icons End -->
 
@@ -392,8 +392,18 @@
 
                           <!-- Project Block - Title with Image Start -->
                           <div class="project__block no-padding no-margin project-image-bg">
-                            <img loading="lazy" class="project-image-bg__portrait" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Dashboard.svg" alt="Qatalyst_dashboard">
-                            <img loading="lazy" class="project-image-bg__landscape" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Dashboard.svg" alt="dashboard">
+                            <canvas id="canvas" width="1440px" height="800px"></canvas>
+                              <script type="module">
+                                import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+                                 new DotLottie({
+                                 autoplay: true,
+                                 loop: true,
+                                 canvas: document.getElementById("canvas"),
+                                 src: "https://lottie.host/3c997603-3d08-401c-abdb-37eca3599257/ba21N0oniY.lottie" // 🔁 Replace with actual .lottie file URL
+                                 });
+                              </script>
+                            <!-- <img loading="lazy" class="project-image-bg__portrait" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Dashboard.svg" alt="Qatalyst_dashboard">
+                            <img loading="lazy" class="project-image-bg__landscape" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Dashboard.svg" alt="dashboard"> -->
                           </div>
                           <!-- Project Block - Title with Image End -->
 
@@ -483,23 +493,23 @@
                   <div class="items__container">
                     <!-- single item -->
                     <div class="affect-items item image image-1">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-1.png " alt="Affectlab-dashboard">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-1.webp " alt="Affectlab-dashboard">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-2">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-2.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-2.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-3">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-4.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-4.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-4">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-5.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-5.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-5">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-7.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-7.webp" alt="Image">
                     </div>
                    </div>
                 </div>
@@ -538,7 +548,7 @@
                                   </div>
                                   <div class="col-12 col-md-6 grid-item">
                                    <div class="project__illustration">
-                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/agile-process.png" alt="Agile-Process">
+                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/agile-process.webp" alt="Agile-Process">
                                     </div>
                                   </div>
                                   <div class="divider"></div>
@@ -575,7 +585,7 @@
                                   </div>
                                   <div class="col-12 col-md-6 grid-item">
                                     <div class="project__illustration">
-                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/csat-survey.png" alt="measuring-success">
+                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/csat-survey.webp" alt="measuring-success">
                                      </div>
                                    </div>
                                   <div class="divider"></div>
@@ -635,7 +645,7 @@
                                     <!-- Project Block - Illustration Fullwidth Start -->
                                       <div class="project__block no-margin no-padding">
                                          <div class="project__illustration-xl">
-                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Research.png" alt="Research">
+                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Research.webp" alt="Research">
                                          </div>
                                       </div>
                                    <!-- Project Block - Illustration Fullwidth End -->                              
@@ -685,7 +695,7 @@
                                   <!-- Project Block - Illustration Fullwidth Start -->
                                       <div class="project__block no-margin no-padding">
                                          <div class="project__illustration-xl">
-                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/key-insight.png" alt="Research">
+                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/key-insight.webp" alt="Research">
                                          </div>
                                       </div>
                                    <!-- Project Block - Illustration Fullwidth End -->  
@@ -717,7 +727,7 @@
                                       <li><p class="type-basic-160lh">❌ Unclear navigation.</p></li>
                                     </ul>
                                     <div class="project__illustration">
-                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/affectlab-before.png" alt="Work Illustration">
+                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/affectlab-before.webp" alt="Work Illustration">
                                     </div>
                                   </div>
                                   <div class="col-12 col-xl-12 grid-item">
@@ -728,7 +738,7 @@
                                       <li><p class="type-basic-160lh">✅ One-click access to key options </p></li>
                                     </ul>
                                     <div class="project__illustration">
-                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Qatalyst-After.png" alt="Work Illustration">
+                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Qatalyst-After.webp" alt="Work Illustration">
                                     </div>
                                   </div>
                                   <div class="divider"></div>
@@ -770,7 +780,7 @@
                                   <!-- Project Block - Illustration Fullwidth Start -->
                                   <div class="project__block no-margin no-padding">
                                     <div class="project__illustration-xl">
-                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/impact.png" alt="Research">
+                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/impact.webp" alt="Research">
                                     </div>
                                  </div>
                               <!-- Project Block - Illustration Fullwidth End -->                         
@@ -799,35 +809,35 @@
                   <div class="items__container">
                     <!-- single item -->
                     <div class="affect-items item image image-1">    
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-1.png" alt="Affectlab-dashboard">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-1.webp" alt="Affectlab-dashboard">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-2">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-2.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-2.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-3">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-3.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-3.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-4">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-4.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-4.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-5">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-5.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-5.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-6">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-6.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-6.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-7">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-7.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-7.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-8">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-8.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-8.webp" alt="Image">
                     </div>
                    </div>
                 </div>
@@ -981,13 +991,13 @@
                           <!-- Project Block - Title with Image Start -->
                            
                           <div class="project__block no-padding no-margin project-image-bg">
-                            <canvas id="canvas" width="1440px" height="800px"></canvas>
+                            <canvas id="qcanvas" width="1440px" height="800px"></canvas>
                               <script type="module">
                                 import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
                                  new DotLottie({
                                  autoplay: true,
                                  loop: true,
-                                 canvas: document.getElementById("canvas"),
+                                 canvas: document.getElementById("qcanvas"),
                                  src: "https://lottie.host/ac198acc-fd2d-4783-b6cc-d15d059cd69c/aF9UXZYfoD.lottie" // 🔁 Replace with actual .lottie file URL
                                  });
                               </script>
@@ -1084,23 +1094,23 @@
                   <div class="items__container">
                     <!-- single item -->
                     <div class="affect-items item image image-1">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-1.png" alt="Affectlab-dashboard">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-1.webp" alt="Affectlab-dashboard">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-2">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-2.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-2.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-3">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-4.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-4.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-4">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-5.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-5.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-5">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-7.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-7.webp" alt="Image">
                     </div>
                    </div>
                 </div>
@@ -1142,7 +1152,7 @@
                                   </div>
                                   <div class="col-12 col-md-6 grid-item">
                                    <div class="project__illustration">
-                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/agile-process.png" alt="Agile-Process">
+                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/agile-process.webp" alt="Agile-Process">
                                     </div>
                                   </div>
                                   <div class="divider"></div>
@@ -1179,7 +1189,7 @@
                                   </div>
                                   <div class="col-12 col-md-6 grid-item">
                                     <div class="project__illustration">
-                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/csat-survey.png" alt="measuring-success">
+                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/csat-survey.webp" alt="measuring-success">
                                      </div>
                                    </div>
                                   <div class="divider"></div>
@@ -1262,7 +1272,7 @@
                                     <!-- Project Block - Illustration Fullwidth Start -->
                                       <div class="project__block no-margin no-padding">
                                          <div class="project__illustration-xl">
-                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Research.png" alt="Research">
+                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Research.webp" alt="Research">
                                          </div>
                                       </div>
                                    <!-- Project Block - Illustration Fullwidth End -->                              
@@ -1319,7 +1329,7 @@
                                   <!-- Project Block - Illustration Fullwidth Start -->
                                       <div class="project__block no-margin no-padding">
                                          <div class="project__illustration-xl">
-                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/key-insight.png" alt="Research">
+                                            <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/key-insight.webp" alt="Research">
                                          </div>
                                       </div>
                                    <!-- Project Block - Illustration Fullwidth End -->  
@@ -1353,7 +1363,7 @@
                                       <li><p class="type-basic-160lh">❌ Slow, manual tagging process with zero AI support</p></li>
                                     </ul>
                                     <div class="project__illustration">
-                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/affectlab-before.png" alt="Work Illustration">
+                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/affectlab-before.webp" alt="Work Illustration">
                                     </div>
                                   </div>
                                   <div class="col-12 col-xl-12 grid-item">
@@ -1367,7 +1377,7 @@
                                       <li><p class="type-basic-160lh">✅ Insight clustering: visual maps and sentiment timelines to track key patterns</p></li>
                                     </ul>
                                     <div class="project__illustration">
-                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Qatalyst-After.png" alt="Work Illustration">
+                                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Qatalyst-After.webp" alt="Work Illustration">
                                     </div>
                                   </div>
                                   <div class="divider"></div>
@@ -1423,7 +1433,7 @@
                                   <!-- Project Block - Illustration Fullwidth Start -->
                                   <div class="project__block no-margin no-padding">
                                     <div class="project__illustration-xl">
-                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/impact.png" alt="Research">
+                                       <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/impact.webp" alt="Research">
                                     </div>
                                  </div>
                               <!-- Project Block - Illustration Fullwidth End -->                         
@@ -1452,35 +1462,35 @@
                   <div class="items__container">
                     <!-- single item -->
                     <div class="affect-items item image image-1">    
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-1.png" alt="Affectlab-dashboard">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-1.webp" alt="Affectlab-dashboard">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-2">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-2.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-2.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-3">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-3.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-3.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-4">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-4.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-4.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-5">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-5.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-5.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-6">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-6.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-6.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-7">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-7.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-7.webp" alt="Image">
                     </div>
                     <!-- single item -->
                     <div class="affect-items item image image-8">
-                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-8.png" alt="Image">
+                      <img loading="lazy" src="https://maya-portfolio-assets.s3.us-east-1.amazonaws.com/Q-A-8.webp" alt="Image">
                     </div>
                    </div>
                 </div>
