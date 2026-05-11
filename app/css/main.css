@@ -4434,12 +4434,10 @@ form textarea:required:valid {
   width: -moz-calc(100% - 4rem);
   width: calc(100% - 4rem);
   margin: 2rem auto;
-  overflow: hidden;
+  overflow: hidden scroll;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
      -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  -ms-scroll-chaining: aut0;
-      overscroll-behavior: aut0;
 }
 @media only screen and (min-width: 768px) {
   .popup {
